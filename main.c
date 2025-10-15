@@ -3,26 +3,15 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int sum(int a, int b){
-	return (a+b);
-}
-
-int square(int n){
-	return (n*n);
-}
-
-int get_max(int a, int b){
-	if (a>b)
-		return a;
-	else
-		return b;
+void square(int a){
+	a = a*a;
 }
 
 int main(int argc, char *argv[]) {
 	
-	printf("sum result is %i\n", sum(2,4));
-	printf("square result is %i\n", square(5));
-	printf("getmax result is %i\n", get_max(10,13));
+	int a=2;
+	square(a);
+	printf("a=%i\n", a);
 	
 	return 0;
 }
